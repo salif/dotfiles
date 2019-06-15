@@ -1,0 +1,11 @@
+[user]
+	name = Salif Mehmed
+	email = salif@programmer.net
+[core]
+	editor = vim
+[credential]
+	helper = store
+[diff]
+	tool = kdiff3
+[merge]
+	tool = kdiff3

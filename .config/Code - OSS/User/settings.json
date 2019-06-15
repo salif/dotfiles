@@ -1,0 +1,13 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "editor.fontFamily": "'Consolas', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+	},
+    "editor.insertSpaces": false,
+    "window.zoomLevel": 0
+}

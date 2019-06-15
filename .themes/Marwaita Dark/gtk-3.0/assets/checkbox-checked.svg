@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333332 4.2333334"
+   version="1.1"
+   id="svg2001"
+   sodipodi:docname="checkbox-checked.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs1995">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect7012"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="62.033095"
+     inkscape:cx="2.919017"
+     inkscape:cy="9.1075426"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="702"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1998">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-292.76665)">
+    <rect
+       ry="0"
+       y="293.04568"
+       x="0.26458818"
+       height="3.7041667"
+       width="3.7041585"
+       id="rect5773"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:none;stroke-width:0.52915734;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       sodipodi:type="inkscape:offset"
+       inkscape:radius="0"
+       inkscape:original="M 3.7363281 293.5918 L 2.1835938 295.14844 L 1.3339844 294.42969 L 0.72851562 294.43164 L 0.72851562 294.93945 L 2.1757812 296.15039 L 4.2773438 294.0957 L 4.1875 293.65625 L 3.7363281 293.5918 z "
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.13229167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path7010"
+       d="m 3.7363281,293.5918 -1.5527343,1.55664 -0.8496094,-0.71875 -0.60546878,0.002 v 0.50781 L 2.1757812,296.15039 4.2773438,294.0957 4.1875,293.65625 Z"
+       transform="matrix(0.71760899,0,0,0.77879766,0.31843085,65.231012)" />
+    <path
+       sodipodi:type="inkscape:offset"
+       inkscape:radius="0.18146977"
+       inkscape:original="M 3.7363281 293.5918 L 2.1835938 295.14844 L 1.3339844 294.42969 L 0.72851562 294.43164 L 0.72851562 294.93945 L 2.1757812 296.15039 L 4.2773438 294.0957 L 4.1875 293.65625 L 3.7363281 293.5918 z "
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.35392091;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.58823532"
+       id="path7010-3"
+       d="m 3.7265625,293.41016 a 0.18148792,0.18148792 0 0 0 -0.1191406,0.0527 l -1.4335938,1.43945 -0.7226562,-0.61132 a 0.18148792,0.18148792 0 0 0 -0.1171875,-0.043 L 0.72851562,294.25 A 0.18148792,0.18148792 0 0 0 0.546875,294.43164 v 0.50781 a 0.18148792,0.18148792 0 0 0 0.0644531,0.13867 l 1.44726568,1.21094 a 0.18148792,0.18148792 0 0 0 0.2441406,-0.01 l 2.1015625,-2.05469 a 0.18148792,0.18148792 0 0 0 0.050781,-0.16602 l -0.089844,-0.43945 a 0.18148792,0.18148792 0 0 0 -0.1523438,-0.14258 l -0.4511718,-0.0645 a 0.18148792,0.18148792 0 0 0 -0.035156,-0.002 z"
+       transform="matrix(0.717609,0,0,0.77879765,0.31843081,65.231015)" />
+  </g>
+</svg>
