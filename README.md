@@ -1,2 +1,2 @@
 # dotfiles
-Arch Linux/i3-gaps
+Arch Linux - i3
