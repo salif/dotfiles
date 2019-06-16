@@ -1,0 +1,9 @@
+#!/bin/bash
+
+MENU="$(rofi -sep "|" -dmenu -i -p 'System: ' -location 5 -yoffset -75 -xoffset -69 -width 15 -hide-scrollbar -line-padding 4 -padding 10 -lines 4 <<< "Lock|Logout|Reboot|Shutdown|")"
+            case "$MENU" in
+                *Lock) i3lock -c 000000 ;;
+                *Logout) i3-msg exit ;;
+                *Reboot) systemctl reboot ;;
+                *Shutdown) systemctl -i poweroff ;;
+            esac
