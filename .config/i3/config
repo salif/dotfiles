@@ -14,15 +14,11 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:monospace 8
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
-
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-new_window pixel
+new_window pixel 0
+new_float pixel 0
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
@@ -143,24 +139,20 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
-for_window [class="konsole"] floating enable, resize set 800 600, border pixel 1
+for_window [class="konsole"] floating enable, resize set 800 600, border pixel 0
 for_window [title="alsamixer"] floating enable
 for_window [title="Calculator"] floating enable
 for_window [class="feh"] floating enable, move absolute position center
 for_window [class="Eog"] floating enable, move absolute position center
 for_window [instance="dropdown_*"] floating enable, move scratchpad, sticky enable
 for_window [class="Nm-connection-editor"] floating enable
-# for_window [class=""] floating enable
-# for_window [class=""] floating enable
-# for_window [class=""] floating enable
-# for_window [class=""] floating enable
-# for_window [class=""] floating enable
 for_window [class="cinnamon-settings network"] floating enable
 for_window [class="cinnamon-settings calendar"] floating enable
 for_window [class="cinnamon-settings sound"] floating enable
+# for_window [class=""] floating enable
 
 exec_always --no-startup-id ".config/polybar/launch.sh"
 exec "fluxgui"
