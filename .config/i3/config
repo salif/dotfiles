@@ -142,7 +142,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
-for_window [class="konsole"] floating enable, resize set 800 600, border pixel 0
+for_window [class="konsole"] floating enable, resize set 1000 600, border pixel 0
 for_window [title="alsamixer"] floating enable
 for_window [title="Calculator"] floating enable
 for_window [class="feh"] floating enable, move absolute position center
@@ -155,7 +155,6 @@ for_window [class="cinnamon-settings sound"] floating enable
 # for_window [class=""] floating enable
 
 exec_always --no-startup-id ".config/polybar/launch"
-exec "fluxgui"
 
 # --------------------------------------------------
 
