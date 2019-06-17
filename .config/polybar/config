@@ -127,6 +127,7 @@ label-occupied-background = ${color.shade6}
 type = custom/text
 content = Arch Linux
 click-left = konsole --noclose -e "neofetch"
+click-right = konsole
 content-background = ${color.bg}
 content-foreground = ${color.fg}
 content-padding = 2
