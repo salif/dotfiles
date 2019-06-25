@@ -8,7 +8,7 @@ trans = #00000000
 white = #FFFFFF
 black = #000000
 
-bg = #2f343f
+bg = #1F1F1F
 fg = #FFFFFF
 fg-alt = #A9ABB0
 
@@ -16,14 +16,14 @@ acolor = #FFFFFF
 curgent = #EF5350
 coccupied = #42A5F5
 
-shade1 = #0D47A1
-shade2 = #1565C0
-shade3 = #1976D2
-shade4 = #1E88E5
-shade5 = #2196F3
-shade6 = #42A5F5
-shade7 = #64B5F6
-shade8 = #90CAF9
+shade1 = #263238
+shade2 = #37474F
+shade3 = #455A64
+shade4 = #546E7A
+shade5 = #607D8B
+shade6 = #78909C
+shade7 = #90A4AE
+shade8 = #B0BEC5
 ashade8 = #2C2C2C
 
 ## Material Colors
@@ -52,7 +52,7 @@ blue-gray = #546e7a
 
 [bar/main]
 width = 100%
-height = 28
+height = 24
 offset-x = 0
 offset-y = 0
 bottom = true
@@ -73,7 +73,7 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
 modules-left = workspaces
-modules-center = archlinux
+modules-center = 
 modules-right = keyboard volume battery network date powermenu
 
 tray-position = right
@@ -100,7 +100,7 @@ icon-6 = 7;7
 icon-7 = 8;8
 icon-8 = 9;9
 icon-9 = 10;10
-icon-default = 
+icon-default = 0;0
 
 format = <label-state>
 label-active = %icon%
@@ -121,16 +121,7 @@ label-occupied-foreground = ${color.fg}
 label-active-background = ${color.shade2}
 label-urgent-background = ${color.shade3}
 label-empty-background = ${color.shade4}
-label-occupied-background = ${color.shade6}
-
-[module/archlinux]
-type = custom/text
-content = Arch Linux
-click-left = konsole --noclose -e "neofetch"
-click-right = konsole
-content-background = ${color.bg}
-content-foreground = ${color.fg}
-content-padding = 2
+label-occupied-background = ${color.shade5}
 
 [module/keyboard]
 type = internal/xkeyboard

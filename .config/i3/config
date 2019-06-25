@@ -154,6 +154,7 @@ for_window [class="Nm-connection-editor"] floating enable
 for_window [class="cinnamon-settings network"] floating enable
 for_window [class="cinnamon-settings calendar"] floating enable
 for_window [class="cinnamon-settings sound"] floating enable
+for_window [class="Chromium" window_role="pop-up"] floating enable
 # for_window [class=""] floating enable
 
 exec_always --no-startup-id ".config/polybar/launch"
