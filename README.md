@@ -1,5 +1,9 @@
 # dotfiles
 
-## Screenshot
+## Screenshots
 
-![Salif Mehmed - Arch Linux - i3](https://i.imgur.com/TYQWT5G.png)
+![Salif Mehmed - Arch Linux - i3](other/screenshots/arch_linux_i3.png)
+
+---
+
+![Arch Linux - i3 - neofetch](other/screenshots/neofetch.png)
