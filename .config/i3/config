@@ -136,6 +136,7 @@ bindsym Print exec gnome-screenshot
 bindsym $mod+Print exec gnome-screenshot --interactive
 
 bindsym $mod+b exec nemo
+bindsym $mod+Shift+b exec chromium
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
@@ -155,8 +156,10 @@ for_window [class="cinnamon-settings network"] floating enable
 for_window [class="cinnamon-settings calendar"] floating enable
 for_window [class="cinnamon-settings sound"] floating enable
 for_window [class="Chromium" window_role="pop-up"] floating enable
+for_window [class="TypingTest"] floating enable
+for_window [class="Glade-previewer"] floating enable
 # for_window [class=""] floating enable
-
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec_always --no-startup-id ".config/polybar/launch"
 
 # --------------------------------------------------
