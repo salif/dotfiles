@@ -9,5 +9,14 @@
         "editor.defaultFormatter": "HookyQR.beautify"
 	},
     "editor.insertSpaces": false,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "editor.tabCompletion": "off",
+    "go.formatTool": "gofmt",
+    "go.autocompleteUnimportedPackages": true,
+    "files.insertFinalNewline": true,
+    "go.lintOnSave": "off",
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    }
 }

@@ -26,7 +26,7 @@ bindsym $mod+g exec konsole
 
 # kill focused window
 bindsym $mod+q kill
-bindsym --whole-window button2 kill
+# bindsym --whole-window button2 kill
 
 bindsym $mod+Shift+q exec ~/.config/i3/powermenu
 

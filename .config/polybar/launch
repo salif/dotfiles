@@ -7,3 +7,4 @@ polybar main &
 exec fluxgui &
 exec clipit &
 exec nm-applet &
+
