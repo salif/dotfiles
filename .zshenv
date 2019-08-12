@@ -1,5 +1,7 @@
+#!/bin/zsh
+
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin:$HOME/.local/bin:$HOME/Documents/fuchsia/.jiri_root/bin:$HOME/.gem/ruby/2.6.0/bin
+export PATH=$PATH:$GOPATH/bin:$HOME/.local/bin:$HOME/.gem/ruby/2.6.0/bin
 export VISUAL="gedit"
 
 alias ls='ls --color=auto'
