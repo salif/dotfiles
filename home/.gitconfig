@@ -1,0 +1,21 @@
+[user]
+	name = Salif Mehmed
+	email = mail@salif.eu
+	signingKey = 582BF44B568859DA
+[commit]
+	gpgsign = true
+[pull]
+	rebase = false
+[core]
+	editor = micro
+[alias]
+	pushall = !git remote | xargs -L1 git push
+	slog = !git log --graph --decorate --oneline
+	permission-reset = !git diff -p -R --no-ext-diff --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
+[tag]
+	forceSignAnnotated = true
+[init]
+	defaultBranch = main
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
+

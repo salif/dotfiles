@@ -1,0 +1,15 @@
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - etc
+  - home
+  - other/dconf
+
+title: Salif's dotfiles
+description: Salif's dotfiles
+repository: salif/dotfiles
+
+author:
+  name: Salif Mehmed
+  url: https://salif.eu

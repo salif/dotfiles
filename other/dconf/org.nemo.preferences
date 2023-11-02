@@ -1,0 +1,15 @@
+[/]
+show-advanced-permissions=true
+show-hidden-files=true
+show-location-entry=false
+thumbnail-limit=uint64 8589934592
+
+[menu-config]
+background-menu-open-as-root=false
+background-menu-show-hidden-files=false
+iconview-menu-organize-by-name=false
+selection-menu-duplicate=true
+selection-menu-favorite=false
+selection-menu-open-as-root=false
+selection-menu-open-in-new-window=false
+selection-menu-pin=false

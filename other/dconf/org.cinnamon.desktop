@@ -1,0 +1,84 @@
+[applications/calculator]
+exec='galculator'
+
+[applications/terminal]
+exec='gnome-terminal'
+
+[interface]
+cursor-size=23
+cursor-theme='Bibata-Original-Ice'
+font-name='Cantarell 9'
+gtk-theme='Flat-Remix-GTK-Green-Dark-Solid'
+icon-theme='Flat-Remix-Green-Dark'
+scaling-factor=uint32 0
+text-scaling-factor=1.0
+
+[keybindings]
+looking-glass-keybinding=@as []
+show-desklets=@as []
+
+[keybindings/media-keys]
+help=@as []
+home=['<Super>k', 'XF86Explorer']
+logout=['<Super>l']
+restart-cinnamon=['<Super>r']
+screensaver=['<Super>f', 'XF86ScreenSaver']
+search=['XF86Search']
+shutdown=['<Super>End', 'XF86PowerOff']
+terminal=['<Super>t']
+video-outputs=['<Super>p', 'XF86Display']
+www=['XF86WWW', '<Super>b']
+
+[keybindings/wm]
+close=['<Super>q']
+maximize=['<Super>Return']
+minimize=['<Super>w']
+move-to-monitor-down=['<Shift><Alt><Super>Down']
+move-to-monitor-left=['<Shift><Alt><Super>Left']
+move-to-monitor-right=['<Shift><Alt><Super>Right']
+move-to-monitor-up=['<Shift><Alt><Super>Up']
+move-to-workspace-1=['<Shift><Super>exclam']
+move-to-workspace-2=['<Shift><Super>at']
+move-to-workspace-3=['<Shift><Super>numbersign']
+move-to-workspace-4=['<Shift><Super>dollar']
+move-to-workspace-5=['<Shift><Super>percent']
+move-to-workspace-6=['<Shift><Super>asciicircum']
+move-to-workspace-left=['<Shift><Super>Left']
+move-to-workspace-right=['<Shift><Super>Right']
+push-snap-down=@as []
+push-snap-left=@as []
+push-snap-right=@as []
+push-snap-up=@as []
+push-tile-down=@as []
+push-tile-left=@as []
+push-tile-right=@as []
+push-tile-up=@as []
+raise=@as []
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-5=['<Super>5']
+switch-to-workspace-6=['<Super>6']
+switch-to-workspace-left=['<Super>Left']
+switch-to-workspace-right=['<Super>Right']
+unmaximize=['<Shift><Super>Return']
+
+[notifications]
+bottom-notifications=true
+
+[privacy]
+remember-recent-files=false
+
+[screensaver]
+font-date='Sans 24'
+font-message='Sans 14'
+font-time='Sans 64'
+layout-group=0
+
+[wm/preferences]
+button-layout=':minimize,maximize,close'
+min-window-opacity=30
+mouse-button-modifier='<Super>'
+theme='Flat-Remix-GTK-Green-Dark-Solid'
+titlebar-font='Cantarell 9'

@@ -1,0 +1,5 @@
+ControlPort 9051
+CookieAuthentication 1
+AvoidDiskWrites 1
+ExitNodes {bg},{de}
+ExcludeNodes {ae},{au},{bh},{by},{ca},{cn},{cu},{eg},{et},{fr},{gb},{in},{ir},{jo},{kp},{kr},{kz},{lk},{ly},{my},{no},{nz},{pk},{ru},{sa},{sd},{sy},{th},{tj},{tm},{tn},{tr},{uk},{us},{uz},{ve},{vn},{ye}
