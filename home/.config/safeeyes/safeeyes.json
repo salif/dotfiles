@@ -1,6 +1,6 @@
 {
     "allow_postpone": false,
-    "long_break_duration": 60,
+    "long_break_duration": 30,
     "long_break_interval": 100,
     "long_breaks": [
         {
@@ -68,7 +68,7 @@
             "version": "0.0.3"
         },
         {
-            "enabled": false,
+            "enabled": true,
             "id": "smartpause",
             "settings": {
                 "idle_time": 5,
@@ -78,7 +78,7 @@
             "version": "0.0.3"
         },
         {
-            "enabled": true,
+            "enabled": false,
             "id": "screensaver",
             "settings": {
                 "command": "",
@@ -101,10 +101,10 @@
         }
     ],
     "postpone_duration": 5,
-    "pre_break_warning_time": 10,
+    "pre_break_warning_time": 15,
     "random_order": true,
     "rpc_port": 7200,
-    "short_break_duration": 15,
+    "short_break_duration": 10,
     "short_break_interval": 20,
     "short_breaks": [
         {
@@ -132,6 +132,6 @@
     "shortcut_disable_time": 2,
     "shortcut_postpone": 65,
     "shortcut_skip": 9,
-    "strict_break": false,
+    "strict_break": true,
     "use_rpc_server": true
 }
