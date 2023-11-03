@@ -1,0 +1,43 @@
+{
+    "editor.fontFamily": "\"ComicShannsMono Nerd Font Mono\", \"Liga Comic Mono\", \"Operator Mono\", \"PT Mono\", monospace",
+    "editor.insertSpaces": false,
+    "editor.suggestSelection": "first",
+    "editor.fontLigatures": true,
+    "editor.autoClosingBrackets": "never",
+    "files.trimFinalNewlines": true,
+    "workbench.colorTheme": "Flatland Monokai",
+    "terminal.integrated.fontFamily": "\"Cascadia Mono PL\", monospace, 'Noto Color Emoji'",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "bracketPairColorizer.depreciation-notice": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "html.format.endWithNewline": true,
+    "html.format.preserveNewLines": false,
+    "update.mode": "none",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "markdown.preview.fontFamily": "sans-serif",
+    "redhat.telemetry.enabled": false,
+    "java.codeGeneration.generateComments": true,
+    "java.jdt.ls.java.home": "/usr/lib/jvm/default",
+    "editor.acceptSuggestionOnEnter": "off",
+    "files.associations": {
+        "*.ts": "typescript"
+    },
+    "vscodeGoogleTranslate.HoverTranslations": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "ballerina.enableTelemetry": false,
+    "telemetry.telemetryLevel": "error",
+    "terminal.external.linuxExec": "gnome-terminal",
+    "terminal.integrated.confirmOnExit": "hasChildProcesses",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.detectLocale": "on",
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.tabStopWidth": 4,
+    "terminal.integrated.fontSize": 13,
+}

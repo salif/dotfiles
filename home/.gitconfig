@@ -5,17 +5,23 @@
 [commit]
 	gpgsign = true
 [pull]
+	ff = only
 	rebase = false
+[merge]
+	commit = no
 [core]
 	editor = micro
 [alias]
-	pushall = !git remote | xargs -L1 git push
-	slog = !git log --graph --decorate --oneline
-	permission-reset = !git diff -p -R --no-ext-diff --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
+	push-all-my = !git remote | xargs -L1 git push
+	log-my = !git log --graph --decorate --oneline
+	my-permission-reset = !git diff -p -R --no-ext-diff --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
+	my-onefetch = !onefetch
+	my-log-diff = !git log --name-only --oneline --graph --decorate-refs=refs/remotes/
 [tag]
 	forceSignAnnotated = true
 [init]
 	defaultBranch = main
 [credential]
 	helper = /usr/lib/git-core/git-credential-libsecret
-
+[gui]
+	tabsize = 4

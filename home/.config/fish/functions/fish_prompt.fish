@@ -1,67 +1,30 @@
-function fish_prompt
+function fish_prompt --description 'Write out the prompt'
+    set -l last_status $status
+    set -l normal (set_color normal)
+    set -l status_color (set_color brgreen)
+    set -l cwd_color (set_color $fish_color_cwd)
+    set -l vcs_color (set_color brpurple)
+    set -l prompt_status ""
 
-    set -l retc red
-    test $status = 0; and set retc green
+    # Since we display the prompt on a new line allow the directory names to be longer.
+    set -q fish_prompt_pwd_dir_length
+    or set -lx fish_prompt_pwd_dir_length 0
 
-    set -q __fish_git_prompt_showupstream
-    or set -g __fish_git_prompt_showupstream auto
-
-    function _nim_prompt_wrapper
-        set retc $argv[1]
-        set field_name $argv[2]
-        set field_value $argv[3]
-
-        set_color normal
-        set_color $retc
-        echo -n '─'
-        set_color -o green
-        echo -n '['
-        set_color normal
-        test -n $field_name
-        and echo -n $field_name:
-        set_color $retc
-        echo -n $field_value
-        set_color -o green
-        echo -n ']'
+    # Color the prompt differently when we're root
+    set -l suffix '→'
+    if functions -q fish_is_root_user; and fish_is_root_user
+        if set -q fish_color_cwd_root
+            set cwd_color (set_color $fish_color_cwd_root)
+        end
+        set suffix '#'
     end
 
-    set_color $retc
-    echo -n '┬─'
-    set_color -o green
-    echo -n [
-    if test "$USER" = root -o "$USER" = toor
-        set_color -o red
-    else
-        set_color -o blue
+    # Color the prompt in red on error
+    if test $last_status -ne 0
+        set status_color (set_color $fish_color_error)
+        set prompt_status $status_color "[" $last_status "]" $normal
     end
-    echo -n $USER
-    set_color -o white
-    echo -n @
-    set_color -o blue
-    echo -n (prompt_hostname)
-    set_color -o white
-    echo -n :(prompt_pwd)
-    set_color -o green
-    echo -n ']'
 
-    # Date
-    _nim_prompt_wrapper $retc '' (date +%X)
-
-    # New line
-    echo
-
-    # Background jobs
-    set_color normal
-    for job in (jobs)
-        set_color $retc
-        echo -n '│ '
-        set_color brown
-        echo $job
-    end
-    set_color normal
-    set_color $retc
-    echo -n '╰─>'
-    set_color -o red
-    echo -n '$ '
-    set_color normal
+    echo -s (prompt_login) ' ' $cwd_color (prompt_pwd) $vcs_color (fish_vcs_prompt) $normal ' ' $prompt_status
+    echo -n -s $status_color $suffix ' ' $normal
 end
