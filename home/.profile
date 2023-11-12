@@ -1,5 +1,5 @@
 export H="/mnt/$HOME"
-export EDITOR=micro
+export EDITOR="/usr/bin/micro"
 export QT_QPA_PLATFORMTHEME=qt5ct
 export LIBVA_DRIVER_NAME=iHD
 export npm_config_prefix="$HOME/.local"

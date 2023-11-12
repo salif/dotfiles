@@ -1,3 +1,3 @@
 function top-glances --wraps=glances --description 'alias top-glances=glances'
-  glances $argv
+    glances $argv
 end
