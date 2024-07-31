@@ -1,0 +1,41 @@
+# Maintainer: Salif Mehmed <mail@salif.eu>
+pkgname=NAME
+pkgver=VERSION
+pkgrel=1
+pkgdesc=""
+arch=()
+url=""
+license=('unknown')
+#groups=()
+depends=()
+makedepends=()
+checkdepends=()
+optdepends=()
+#provides=()
+#conflicts=()
+#replaces=()
+#backup=()
+options=()
+#install=
+#changelog=
+source=("$pkgname-$pkgver.tar.gz")
+#noextract=()
+sha256sums=()
+#validpgpkeys=()
+
+prepare() {
+	cd "$pkgname-$pkgver"
+}
+
+build() {
+	cd "$pkgname-$pkgver"
+}
+
+check() {
+	cd "$pkgname-$pkgver"
+}
+
+package() {
+	cd "$pkgname-$pkgver"
+	make DESTDIR="$pkgdir/" install
+}

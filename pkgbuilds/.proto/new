@@ -1,0 +1,15 @@
+#!/usr/bin/fish
+set -l dir_proto (dirname -- (status --current-filename))
+set -l dir_pkgbuilds (dirname "$dir_proto")
+set output (zenity --title 'New package' --text 'Options' --forms --add-entry 'Name' --add-combo 'PKGBUILD' --combo-values (find "$dir_proto" -name 'PKGBUILD*' -exec basename {} \; | string join '|'))
+if test $status -ne 0
+	exit 1
+end
+echo "$output" | read -d "|" name pkgbuild
+set name (string trim "$name")
+if test -d "$dir_pkgbuilds/$name"; or test -z "$name"
+	zenity --error --text "$name already exists!"
+else
+    mkdir -p "$dir_pkgbuilds/$name"
+	cp "$dir_proto/$pkgbuild" "$dir_pkgbuilds/$name/PKGBUILD"
+end

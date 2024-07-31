@@ -11,21 +11,22 @@ My dotfiles for Arch Linux, Cinnamon, i3wm, swaywm.
 * [Homepage](https://salif.github.io/dotfiles)
 * [Github](https://github.com/salif/dotfiles)
 * [Codeberg](https://codeberg.org/salif/dotfiles)
+* [PKGBUILDs](./pkgbuilds/)
 
 ## Preferences
 
 |  |  |
 | :-- | :-- |
 | Linux distribution | Arch Linux |
-| Desktop environment | Cinnamon, Deepin |
+| Desktop environment | Cinnamon |
 | Window manager | i3-wm, swayfx |
 | Display manager | sddm |
 | Boot loader | grub |
 | Grub theme | Vimix |
 | File system | ext4 |
 | File manager | nemo |
-| GTK theme | Dracula, Otis-standard-buttons |
-| Icon theme | BeautyLine, Flat-Remix-Green-Dark |
+| GTK theme | Otis-standard-buttons |
+| Icon theme | Flat-Remix-Green-Dark |
 | Cursor | Bibata-Original-Ice (20px) |
 | Default font | Cantarell |
 | Document font | Alegreya |
@@ -33,9 +34,9 @@ My dotfiles for Arch Linux, Cinnamon, i3wm, swaywm.
 | Terminal | GNOME Terminal |
 | Shell | fish |
 | Text editor | micro, xed |
-| Code editor| VS Code, gnome-builder |
+| Code editor| VS Code, helix, gnome-builder |
 | Package manager | pacman, yay, flatpak |
-| Web Browser | firefox-developer-edition, brave-bin |
+| Web Browser | Brave |
 | Document viewer | xreader |
 | Image viewer | xviewer, pix, gimp |
 | Music player | lollypop, vlc |

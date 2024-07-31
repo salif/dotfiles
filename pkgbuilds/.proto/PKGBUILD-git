@@ -1,0 +1,49 @@
+# Maintainer: Salif Mehmed <mail@salif.eu>
+pkgname=NAME-git
+pkgver=VERSION
+pkgrel=1
+pkgdesc=""
+arch=()
+url=""
+license=('unknown')
+#groups=()
+depends=()
+makedepends=('git')
+checkdepends=()
+optdepends=()
+provides=("${pkgname%-git}")
+conflicts=("${pkgname%-git}")
+#replaces=()
+#backup=()
+options=()
+#install=
+source=('FOLDER::git+URL#FRAGMENT')
+#noextract=()
+sha256sums=('SKIP')
+
+pkgver() {
+	cd "$srcdir/${pkgname%-git}"
+
+# Git, tags available
+	printf "%s" "$(git describe --long | sed 's/\([^-]*-\)g/r\1/;s/-/./g')"
+
+# Git, no tags available
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+prepare() {
+	cd "$srcdir/${pkgname%-git}"
+}
+
+build() {
+	cd "$srcdir/${pkgname%-git}"
+}
+
+check() {
+	cd "$srcdir/${pkgname%-git}"
+}
+
+package() {
+	cd "$srcdir/${pkgname%-git}"
+	make DESTDIR="$pkgdir/" install
+}

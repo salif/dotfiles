@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "\"ComicShannsMono Nerd Font Mono\", \"Liga Comic Mono\", \"Operator Mono\", \"PT Mono\", monospace",
+    "editor.fontFamily": "\"Operator Mono\", \"Liga Comic Mono\", \"Monaspace Argon\", \"PT Mono\", monospace",
     "editor.insertSpaces": false,
     "editor.suggestSelection": "first",
     "editor.fontLigatures": true,
@@ -31,7 +31,6 @@
     "vscodeGoogleTranslate.HoverTranslations": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "ballerina.enableTelemetry": false,
-    "telemetry.telemetryLevel": "error",
     "terminal.external.linuxExec": "gnome-terminal",
     "terminal.integrated.confirmOnExit": "hasChildProcesses",
     "terminal.integrated.cursorStyle": "line",
@@ -40,4 +39,14 @@
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.tabStopWidth": 4,
     "terminal.integrated.fontSize": 13,
+    "codeium.enableConfig": {
+        "*": true,
+        "ballerina": true,
+        "gleam": true
+    },
+    "diffEditor.maxComputationTime": 0,
+    "[gleam]": {
+        "editor.insertSpaces": true,
+    },
+    "files.simpleDialog.enable": true,
 }

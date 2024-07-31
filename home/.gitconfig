@@ -12,8 +12,8 @@
 [core]
 	editor = micro
 [alias]
-	push-all-my = !git remote | xargs -L1 git push
-	log-my = !git log --graph --decorate --oneline
+	my-push = !git remote | xargs -L1 git push
+	my-log = !git log --graph --decorate --oneline
 	my-permission-reset = !git diff -p -R --no-ext-diff --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
 	my-onefetch = !onefetch
 	my-log-diff = !git log --name-only --oneline --graph --decorate-refs=refs/remotes/

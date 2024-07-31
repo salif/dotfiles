@@ -9,8 +9,6 @@ function гит
                 command git add $argv[2..-1]
             case премести
                 command git mv $argv[2..-1]
-            case възстанови
-                command git restore $argv[2..-1]
             case изтрий
                 command git rm $argv[2..-1]
             case разлики
@@ -43,6 +41,10 @@ function гит
                 command git $argv[1..-1]
         end
     else
-        command git
+        command git | sed -e 's/clone   /клонирай/g' -e 's/init  /създай/g' -e 's/add   /добави/g' -e \
+            's/mv      /премести/g' -e 's/rm    /изтрий/g' -e 's/diff   /разлики/g' -e 's/log/лог/g' -e \
+            's/show  /покажи/g' -e 's/status/статус/g' -e 's/branch/клон  /g' -e 's/commit/подай /g' -e \
+            's/merge  /сливане/g' -e 's/switch /премини/g' -e 's/tag/таг/g' -e 's/fetch  /изтегли/g' -e \
+            's/pull   /достави/g' -e 's/push   /изпрати/g' -e 's/help/помощ/g' -e 's/git/гит/g'
     end
 end

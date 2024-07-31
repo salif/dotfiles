@@ -1,0 +1,67 @@
+# Maintainer: Salif Mehmed <mail@salif.eu>
+pkgname=('pkg1' 'pkg2')
+pkgbase=BASE
+pkgver=VERSION
+pkgrel=1
+pkgdesc=""
+arch=()
+url=""
+license=('unknown')
+#groups=()
+depends=()
+makedepends=()
+checkdepends=()
+optdepends=()
+#provides=()
+#conflicts=()
+#replaces=()
+#backup=()
+options=()
+#install=
+#changelog=
+source=("$pkgbase-$pkgver.tar.gz"
+        "$pkgname-$pkgver.patch")
+#noextract=()
+sha256sums=()
+#validpgpkeys=()
+
+prepare() {
+	cd "$pkgname-$pkgver"
+}
+
+build() {
+	cd "$pkgbase-$pkgver"
+}
+
+check() {
+	cd "$pkgname-$pkgver"
+}
+
+package_pkg1() {
+	# options and directives that can be overridden
+	pkgdesc=""
+	arch=()
+	url=""
+	license=()
+	groups=()
+	depends=()
+	optdepends=()
+	provides=()
+	conflicts=()
+	replaces=()
+	backup=()
+	options=()
+	install=
+	changelog=
+
+	cd "$pkgbase-$pkgver"
+	make DESTDIR="$pkgdir/" install-pkg1
+}
+
+package_pkg2() {
+	# options and directives overrides
+	pkgdesc=""
+
+	cd "$pkgbase-$pkgver"
+	make DESTDIR="$pkgdir/" install-pkg2
+}
