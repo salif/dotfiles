@@ -1,0 +1,12 @@
+diff '--color=auto' --unified --recursive --text gleam-1.4.0-rc1/compiler-core/src/format.rs gleam-1.4.0-rc1-new/compiler-core/src/format.rs
+--- gleam-1.4.0-rc1/compiler-core/src/format.rs	2024-07-29 17:20:42.000000000 +0300
++++ gleam-1.4.0-rc1-new/compiler-core/src/format.rs	2024-08-01 21:09:31.292773372 +0300
+@@ -23,7 +23,7 @@
+ use crate::type_::Deprecation;
+ use camino::Utf8Path;
+ 
+-const INDENT: isize = 2;
++const INDENT: isize = 3;
+ 
+ pub fn pretty(writer: &mut impl Utf8Writer, src: &EcoString, path: &Utf8Path) -> Result<()> {
+     let parsed = crate::parse::parse_module(path.to_owned(), src, &WarningEmitter::null())

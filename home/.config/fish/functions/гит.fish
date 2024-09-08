@@ -1,39 +1,39 @@
 function гит
     if test -n "$argv[1]"
         switch $argv[1]
-            case клонирай
+            case клониране
                 command git clone $argv[2..-1]
-            case създай
+            case създаване
                 command git init $argv[2..-1]
-            case добави
+            case добавяне
                 command git add $argv[2..-1]
-            case премести
+            case преместване
                 command git mv $argv[2..-1]
-            case изтрий
+            case изтриване
                 command git rm $argv[2..-1]
             case разлики
                 command git diff $argv[2..-1]
-            case лог
+            case журнал
                 command git log $argv[2..-1]
-            case покажи
+            case показване
                 command git show $argv[2..-1]
             case статус
                 command git status $argv[2..-1]
             case клон
                 command git branch $argv[2..-1]
-            case подай
+            case подаване
                 command git commit $argv[2..-1]
             case сливане
                 command git merge $argv[2..-1]
-            case премини
+            case преминаване
                 command git switch $argv[2..-1]
-            case таг
+            case маркер
                 command git tag $argv[2..-1]
-            case изтегли
+            case изтегляне
                 command git fetch $argv[2..-1]
-            case достави
+            case доставяне
                 command git pull $argv[2..-1]
-            case изпрати
+            case изтласкване
                 command git push $argv[2..-1]
             case помощ
                 command git help $argv[2..-1]
@@ -41,10 +41,14 @@ function гит
                 command git $argv[1..-1]
         end
     else
-        command git | sed -e 's/clone   /клонирай/g' -e 's/init  /създай/g' -e 's/add   /добави/g' -e \
-            's/mv      /премести/g' -e 's/rm    /изтрий/g' -e 's/diff   /разлики/g' -e 's/log/лог/g' -e \
-            's/show  /покажи/g' -e 's/status/статус/g' -e 's/branch/клон  /g' -e 's/commit/подай /g' -e \
-            's/merge  /сливане/g' -e 's/switch /премини/g' -e 's/tag/таг/g' -e 's/fetch  /изтегли/g' -e \
-            's/pull   /достави/g' -e 's/push   /изпрати/g' -e 's/help/помощ/g' -e 's/git/гит/g'
+        command git | sed -e 's/clone     /клониране   /g' -e 's/init      /създаване   /g' -e \
+            's/add       /добавяне    /g' -e 's/mv        /преместване /g' -e 's/restore   /възстанови  /g' -e \
+            's/rm        /изтриване   /g' -e 's/bisect    /bisect      /g' -e 's/diff      /разлики     /g' -e \
+            's/grep      /grep        /g' -e 's/log       /журнал      /g' -e 's/show      /показване   /g' -e \
+            's/status    /статус      /g' -e 's/branch    /клон        /g' -e 's/commit    /подаване    /g' -e \
+            's/merge     /сливане     /g' -e 's/rebase    /rebase      /g' -e 's/reset     /reset       /g' -e \
+            's/switch    /преминаване /g' -e 's/tag       /маркер      /g' -e 's/fetch     /изтегляне   /g' -e \
+            's/pull      /доставяне   /g' -e 's/push      /изтласкване /g' -e 's/help      /помощ     /g' -e \
+            's/git help/гит помощ/g' -e 's/: git/: гит/g'
     end
 end

@@ -1,0 +1,53 @@
+# Maintainer: Salif Mehmed <mail@salif.eu>
+pkgname=nemo_gleam-git
+pkgver=v1.3.0.r0.5f9483d
+pkgrel=1
+pkgdesc="GUI extension for Gleam development"
+arch=('x86_64')
+url="https://codeberg.org/salif/nemo_gleam"
+license=('Apache-2.0')
+#groups=()
+depends=('gleam' 'zenity' 'erlang-nox')
+makedepends=('git')
+checkdepends=()
+optdepends=()
+provides=("${pkgname%-git}")
+conflicts=("${pkgname%-git}")
+#replaces=()
+#backup=()
+options=()
+#install=
+source=("${pkgname%-git}"::'git+https://codeberg.org/salif/nemo_gleam.git')
+#noextract=()
+sha256sums=('SKIP')
+
+pkgver() {
+	cd "$srcdir/${pkgname%-git}"
+
+# Git, tags available
+	printf "%s" "$(git describe --long | sed 's/\([^-]*-\)g/r\1/;s/-/./g')"
+}
+
+prepare() {
+	cd "$srcdir/${pkgname%-git}"
+}
+
+build() {
+	cd "$srcdir/${pkgname%-git}"
+
+	just make
+	just make-js
+}
+
+check() {
+	cd "$srcdir/${pkgname%-git}"
+
+	test -d ./build/erlang-shipment
+	test -d ./build/javascript-prod
+}
+
+package() {
+	cd "$srcdir/${pkgname%-git}"
+
+	just DESTDIR="$pkgdir" install
+}

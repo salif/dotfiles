@@ -1,0 +1,6 @@
+*.pkg.tar.zst
+*.tar.gz
+src/
+pkg/
+/nemo_gleam-git/nemo_gleam/
+/old/

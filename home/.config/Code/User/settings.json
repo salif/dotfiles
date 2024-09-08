@@ -1,38 +1,28 @@
 {
-    "editor.fontFamily": "\"Operator Mono\", \"Liga Comic Mono\", \"Monaspace Argon\", \"PT Mono\", monospace",
+    "editor.fontFamily": "'Monaspace Neon', 'PT Mono', monospace",
+    "editor.fontSize": 13,
+    "markdown.preview.fontSize": 13,
     "editor.insertSpaces": false,
     "editor.suggestSelection": "first",
-    "editor.fontLigatures": true,
     "editor.autoClosingBrackets": "never",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
     "files.trimFinalNewlines": true,
     "workbench.colorTheme": "Flatland Monokai",
-    "terminal.integrated.fontFamily": "\"Cascadia Mono PL\", monospace, 'Noto Color Emoji'",
-    "editor.unicodeHighlight.ambiguousCharacters": false,
-    "bracketPairColorizer.depreciation-notice": false,
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "html.format.endWithNewline": true,
     "html.format.preserveNewLines": false,
     "update.mode": "none",
-    "editor.unicodeHighlight.nonBasicASCII": false,
-    "editor.unicodeHighlight.invisibleCharacters": false,
     "markdown.preview.fontFamily": "sans-serif",
     "redhat.telemetry.enabled": false,
     "java.codeGeneration.generateComments": true,
     "java.jdt.ls.java.home": "/usr/lib/jvm/default",
     "editor.acceptSuggestionOnEnter": "off",
-    "files.associations": {
-        "*.ts": "typescript"
-    },
     "vscodeGoogleTranslate.HoverTranslations": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "ballerina.enableTelemetry": false,
     "terminal.external.linuxExec": "gnome-terminal",
-    "terminal.integrated.confirmOnExit": "hasChildProcesses",
+    "terminal.integrated.fontFamily": "'Cascadia Mono PL', monospace, 'Noto Color Emoji'",
+    "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.detectLocale": "on",
@@ -41,12 +31,22 @@
     "terminal.integrated.fontSize": 13,
     "codeium.enableConfig": {
         "*": true,
-        "ballerina": true,
-        "gleam": true
+        "gleam": true,
+        "just": true,
+        "markdown": true
     },
     "diffEditor.maxComputationTime": 0,
-    "[gleam]": {
-        "editor.insertSpaces": true,
-    },
     "files.simpleDialog.enable": true,
+    "files.insertFinalNewline": true,
+    "workbench.preferredDarkColorTheme": "Flatland Monokai",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Github Light Theme - Gray",
+    "prettier.requireConfig": true,
+    "htmlhint.options": {
+        "doctype-first": false
+    },
+    "gleam.path": "/usr/bin/gleam-patched",
+    "[gleam]": {
+        "editor.formatOnSave": true
+    }
 }

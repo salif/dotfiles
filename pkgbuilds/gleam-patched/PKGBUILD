@@ -1,0 +1,45 @@
+# Maintainer: Salif Mehmed <mail@salif.eu>
+pkgname=gleam-patched
+pkgver=1.4.0
+pkgrel=1
+pkgdesc="Gleam - patched to use 3-space indentation"
+arch=('any')
+url="https://gleam.run"
+license=('Apache-2.0')
+#groups=()
+depends=('erlang-nox')
+makedepends=('rust')
+checkdepends=()
+optdepends=()
+provides=('gleam')
+#conflicts=()
+#replaces=()
+#backup=()
+options=(!strip !docs !libtool !staticlibs !lto !debug)
+#install=
+#changelog=
+source=("https://github.com/gleam-lang/gleam/archive/refs/tags/v${pkgver//_/-}.tar.gz" "INDENT.patch")
+#noextract=()
+sha256sums=('ac889a2f3448960d97332f24531a41a50cf693056e578d501d24ee3812517607'
+            'ee4cd6e252daa632020624c98f1e0c2a6f9c3b4ca8293f2917cd9200236c8dce')
+#validpgpkeys=()
+
+prepare() {
+	cd "${pkgname%-patched}-${pkgver//_/-}"
+	patch --forward --strip=1 --input=../INDENT.patch
+}
+
+build() {
+	cd "${pkgname%-patched}-${pkgver//_/-}"
+	make build
+}
+
+check() {
+	cd "${pkgname%-patched}-${pkgver//_/-}"
+}
+
+package() {
+	cd "${pkgname%-patched}-${pkgver//_/-}"
+	install -Dm0755 ./target/release/gleam "${pkgdir}/usr/bin/${pkgname}"
+	install -Dm0644 ./LICENCE "${pkgdir}/usr/share/licenses/${pkgname}/LICENCE"
+}

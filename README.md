@@ -9,14 +9,14 @@ My dotfiles for Arch Linux, Cinnamon, i3wm, swaywm.
 ## Links
 
 * [Homepage](https://salif.github.io/dotfiles)
+* [PKGBUILDs](./pkgbuilds/)
 * [Github](https://github.com/salif/dotfiles)
 * [Codeberg](https://codeberg.org/salif/dotfiles)
-* [PKGBUILDs](./pkgbuilds/)
 
 ## Preferences
 
 |  |  |
-| :-- | :-- |
+| :--- | :--- |
 | Linux distribution | Arch Linux |
 | Desktop environment | Cinnamon |
 | Window manager | i3-wm, swayfx |

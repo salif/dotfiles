@@ -1,0 +1,3 @@
+./tor/torrc
+./X11/xorg.conf.d/00-keyboard.conf
+./.bash_profile

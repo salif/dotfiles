@@ -1,9 +1,11 @@
-export H="/mnt/$HOME"
+export H="/mnt/home/$USER"
 export EDITOR="/usr/bin/micro"
-export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME=qt6ct
 export LIBVA_DRIVER_NAME=iHD
 export npm_config_prefix="$HOME/.local"
 export GOPATH="$H/Go"
-export BALLERINA_HOME="$HOME/.local/lib/ballerina"
-export PATH="$HOME/.local/share/slfbin/bin:$HOME/.local/bin:$GOPATH/bin:$BALLERINA_HOME/bin:$PATH"
-#. "$HOME/.cargo/env"
+export GEM_HOME="$HOME/.gem/ruby/3.2.0"
+export MY_SCRIPTS_HOME="$HOME/.local/share/slfbin"
+export PATH="$HOME/.local/bin:$MY_SCRIPTS_HOME/bin:$HOME/.cargo/bin:$GEM_HOME/bin:$GOPATH/bin:$PATH"
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
+export HEXPM_USER="lumalee"
