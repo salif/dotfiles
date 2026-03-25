@@ -9,6 +9,7 @@
 	rebase = false
 [merge]
 	commit = no
+	tool = vscode
 [core]
 	editor = micro
 [alias]
@@ -25,3 +26,4 @@
 	helper = /usr/lib/git-core/git-credential-libsecret
 [gui]
 	tabsize = 4
+	warndetachedcommit = true

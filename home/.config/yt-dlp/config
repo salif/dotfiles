@@ -2,4 +2,6 @@
 --embed-metadata
 --embed-subs
 --no-embed-chapters
---no-embed-info-json
+--no-write-info-json
+--sub-langs "bg.*,en.*,tr.*"
+--output %(title).200B.%(ext)s

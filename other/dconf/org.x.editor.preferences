@@ -2,11 +2,14 @@
 auto-indent=true
 bracket-matching=true
 display-line-numbers=true
+editor-font='Monaspace Radon Expanded 9'
 highlight-current-line=true
 insert-spaces=false
 prefer-dark-theme=true
-scheme='cobalt'
+scheme='monokai-extended'
+use-default-font=true
 wrap-mode='none'
 
 [ui]
+side-panel-visible=false
 statusbar-visible=true

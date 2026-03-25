@@ -1,0 +1,32 @@
+{
+	"[gleam]": {
+		"editor.formatOnSave": true
+	},
+	"antigravity.marketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
+	"antigravity.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/items",
+	"editor.fontFamily": "'Monaspace Neon', 'PT Mono', 'monospace', monospace",
+	"editor.fontSize": 13,
+	"editor.formatOnSave": false,
+	"editor.insertSpaces": false,
+	"gleam.path": "/usr/bin/gleam",
+	"htmlhint.options": {
+		"attr-lowercase": true,
+		"attr-no-duplication": true,
+		"attr-value-double-quotes": true,
+		"doctype-first": false,
+		"id-unique": true,
+		"spec-char-escape": true,
+		"src-not-empty": true,
+		"tag-pair": true,
+		"tagname-lowercase": true,
+		"title-require": true
+	},
+	"terminal.external.linuxExec": "gnome-terminal",
+	"terminal.integrated.fontSize": 13,
+	"terminal.integrated.tabStopWidth": 4,
+	"update.mode": "none",
+	"window.autoDetectColorScheme": true,
+	"workbench.colorTheme": "Github Light Theme - Gray",
+	"workbench.preferredDarkColorTheme": "Monokai Vibrant",
+	"workbench.preferredLightColorTheme": "Github Light Theme - Gray"
+}

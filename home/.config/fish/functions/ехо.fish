@@ -1,4 +1,4 @@
-function ехо
+function ехо --wraps echo --description 'echo wrapper'
     if test -n "$argv[1]"
         switch $argv[1]
             case -н
@@ -6,7 +6,7 @@ function ехо
             case -е
                 command echo -e $argv[2..-1]
             case -Е
-                command echo -Е $argv[2..-1]
+                command echo -E $argv[2..-1]
             case --помощ
                 command echo --help $argv[2..-1]
             case --версия

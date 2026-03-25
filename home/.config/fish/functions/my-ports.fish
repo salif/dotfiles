@@ -1,3 +1,4 @@
-function my-ports --wraps='netstat -tunlp' --description 'alias my-ports=netstat -tunlp'
+function my-ports --description 'Show all listening ports'
     netstat -tunlp
+    ss -tunlp
 end

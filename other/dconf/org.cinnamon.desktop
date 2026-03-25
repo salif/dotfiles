@@ -1,37 +1,81 @@
+[a11y/applications]
+screen-keyboard-enabled=false
+screen-reader-enabled=false
+
+[a11y/keyboard]
+mousekeys-enable=false
+togglekeys-enable-osd=true
+
 [applications/calculator]
 exec='galculator'
 
 [applications/terminal]
 exec='gnome-terminal'
+exec-arg='--'
 
 [interface]
-cursor-size=23
+cursor-size=20
 cursor-theme='Bibata-Original-Ice'
 font-name='Cantarell 9'
-gtk-theme='Flat-Remix-GTK-Green-Dark-Solid'
-icon-theme='Flat-Remix-Green-Dark'
+gtk-overlay-scrollbars=true
+gtk-theme='Flat-Remix-GTK-Green'
+gtk-theme-backup='Adwaita-dark'
+icon-theme='Flat-Remix-Green-Light'
+icon-theme-backup='Flat-Remix-Green-Dark'
+keyboard-layout-prefer-variant-names=false
+keyboard-layout-show-flags=true
 scaling-factor=uint32 0
 text-scaling-factor=1.0
+toolkit-accessibility=false
 
 [keybindings]
+custom-list=['__dummy__', 'custom0', 'custom1', 'custom2', 'custom3']
 looking-glass-keybinding=@as []
 show-desklets=@as []
 
+[keybindings/custom-keybindings/custom0]
+binding=['<Primary>1']
+command='setxkbmap -model pc105 -layout us,bg -variant colemak,colemak_bg'
+name='Switch To English'
+
+[keybindings/custom-keybindings/custom1]
+binding=['<Primary>2']
+command='setxkbmap -model pc105 -layout bg,us -variant colemak_bg,colemak'
+name='Switch To Bulgarian'
+
+[keybindings/custom-keybindings/custom2]
+binding=['<Primary>3']
+command='setxkbmap -model pc105 -layout tr,us -variant colemak_tr,colemak'
+name='Switch To Turkish'
+
+[keybindings/custom-keybindings/custom3]
+binding=['<Primary>4']
+command='setxkbmap -model pc105 -layout epo,us -variant colemak_eo,colemak'
+name='Switch To Esperanto'
+
 [keybindings/media-keys]
+area-screenshot-clip=@as []
+battery=['XF86Battery']
 help=@as []
 home=['<Super>k', 'XF86Explorer']
 logout=['<Super>l']
 restart-cinnamon=['<Super>r']
-screensaver=['<Super>f', 'XF86ScreenSaver']
+screensaver=['XF86ScreenSaver']
+screenshot-clip=@as []
 search=['XF86Search']
-shutdown=['<Super>End', 'XF86PowerOff']
+shutdown=['XF86PowerOff']
+suspend=['XF86Sleep']
 terminal=['<Super>t']
 video-outputs=['<Super>p', 'XF86Display']
+video-rotation-lock=['<Shift><Super>l']
+window-screenshot-clip=@as []
 www=['XF86WWW', '<Super>b']
 
 [keybindings/wm]
+begin-move=@as []
+begin-resize=@as []
 close=['<Super>q']
-maximize=['<Super>Return']
+maximize=['<Super>m']
 minimize=['<Super>w']
 move-to-monitor-down=['<Shift><Alt><Super>Down']
 move-to-monitor-left=['<Shift><Alt><Super>Left']
@@ -44,6 +88,7 @@ move-to-workspace-4=['<Shift><Super>dollar']
 move-to-workspace-5=['<Shift><Super>percent']
 move-to-workspace-6=['<Shift><Super>asciicircum']
 move-to-workspace-left=['<Shift><Super>Left']
+move-to-workspace-new=['<Super>Return']
 move-to-workspace-right=['<Shift><Super>Right']
 push-snap-down=@as []
 push-snap-left=@as []
@@ -62,23 +107,42 @@ switch-to-workspace-5=['<Super>5']
 switch-to-workspace-6=['<Super>6']
 switch-to-workspace-left=['<Super>Left']
 switch-to-workspace-right=['<Super>Right']
-unmaximize=['<Shift><Super>Return']
+toggle-recording=['<Primary>Print']
+unmaximize=['<Shift><Super>m']
+
+[media-handling]
+autorun-never=false
 
 [notifications]
 bottom-notifications=true
+remove-old=false
+
+[peripherals/keyboard]
+numlock-state=false
+repeat=true
 
 [privacy]
 remember-recent-files=false
 
 [screensaver]
+allow-media-control=false
 font-date='Sans 24'
 font-message='Sans 14'
 font-time='Sans 64'
 layout-group=0
+lock-delay=uint32 0
+lock-enabled=true
+show-album-art=false
+
+[session]
+idle-delay=uint32 0
+
+[sound]
+event-sounds=false
 
 [wm/preferences]
 button-layout=':minimize,maximize,close'
 min-window-opacity=30
 mouse-button-modifier='<Super>'
-theme='Flat-Remix-GTK-Green-Dark-Solid'
-titlebar-font='Cantarell 9'
+theme='Flat-Remix-GTK-Green'
+titlebar-font='Cantarell Bold 9'

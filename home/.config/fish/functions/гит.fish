@@ -1,4 +1,4 @@
-function гит
+function гит --wraps git --description 'git wrapper'
     if test -n "$argv[1]"
         switch $argv[1]
             case клониране

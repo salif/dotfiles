@@ -1,4 +1,8 @@
 [/]
+default-sort-in-reverse-order=false
+enable-delete=true
+inherit-folder-viewer=false
+last-server-connect-method=1
 show-advanced-permissions=true
 show-hidden-files=true
 show-location-entry=false
@@ -10,6 +14,7 @@ background-menu-show-hidden-files=false
 iconview-menu-organize-by-name=false
 selection-menu-duplicate=true
 selection-menu-favorite=false
+selection-menu-make-link=true
 selection-menu-open-as-root=false
 selection-menu-open-in-new-window=false
 selection-menu-pin=false
